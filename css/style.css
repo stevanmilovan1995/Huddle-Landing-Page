@@ -1,0 +1,175 @@
+.wrapper {
+  max-width: 140rem;
+  margin: 0 auto; }
+  @media (max-width: 97em) {
+    .wrapper {
+      max-width: 85%; } }
+  @media (max-width: 75em) {
+    .wrapper {
+      max-width: 80%; } }
+
+.u-margin-top-big {
+  margin-top: 8rem; }
+  @media (max-width: 56.25em) {
+    .u-margin-top-big {
+      margin-top: 4rem; } }
+
+.u-margin-top-medium {
+  margin-top: 4rem; }
+  @media (max-width: 56.25em) {
+    .u-margin-top-medium {
+      margin-top: 2rem; } }
+
+*
+*::after
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 56.25%; } }
+  @media (min-width: 122em) {
+    html {
+      font-size: 75%; } }
+
+body {
+  box-sizing: border-box;
+  background-image: linear-gradient(to right bottom, rgba(103, 75, 175, 0.801), rgba(103, 75, 175, 0.801)), url("/images/bg-desktop.jpg");
+  background-size: cover;
+  height: 100vh; }
+
+body {
+  font-family: "Open Sans" ,sans-serif;
+  font-weight: 400;
+  color: #fff; }
+
+.heading-primary {
+  font-size: 4rem;
+  font-family: "Poppins" , sans-serif;
+  font-weight: 600; }
+  @media (max-width: 75em) {
+    .heading-primary {
+      font-size: 5rem; } }
+
+.paragraph {
+  font-size: 1.8rem;
+  line-height: 1.6;
+  margin-bottom: 5rem; }
+  @media (max-width: 75em) {
+    .paragraph {
+      font-size: 2rem; } }
+
+.btn, .btn:link, .btn:visited {
+  text-decoration: none;
+  font-size: 1.8rem;
+  padding: 1.5rem 6rem;
+  border-radius: 10rem;
+  font-weight: 700;
+  display: inline-block;
+  transition: all .2s;
+  position: absolute; }
+  @media (max-width: 75em) {
+    .btn, .btn:link, .btn:visited {
+      position: static; } }
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+  .btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0; }
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+
+.btn--white {
+  background-color: #fff !important;
+  color: #674baf; }
+  .btn--white::after {
+    background-color: #fff; }
+  .btn--white:hover {
+    background-color: #e882e8 !important;
+    color: #fff; }
+
+.about__image {
+  width: 60%; }
+  @media (max-width: 75em) {
+    .about__image {
+      width: 100%; } }
+  .about__image-photo {
+    width: 100%; }
+
+.about__content-box {
+  width: 35%;
+  margin-left: 3rem;
+  align-self: flex-start; }
+  @media (max-width: 75em) {
+    .about__content-box {
+      width: 60%;
+      align-self: center;
+      margin-left: 0;
+      text-align: center; } }
+  @media (max-width: 56.25em) {
+    .about__content-box {
+      width: 90%; } }
+  @media (max-width: 75em) {
+    .about__content-box__btn {
+      text-align: center; } }
+
+.footer__social-link {
+  text-decoration: none;
+  color: #fff; }
+  .footer__social-link:not(:last-child) {
+    margin-right: 1rem; }
+
+.footer__social-media-icon {
+  padding: 1rem 1rem;
+  display: inline-block;
+  border: 2px solid #fff;
+  border-radius: 60%; }
+  .footer__social-media-icon:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    color: #e882e8;
+    border: 2px solid #e882e8; }
+    .footer__social-media-icon:hover::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0; }
+    .footer__social-media-icon:hover:active {
+      transform: translateY(-1px);
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+
+.header__logo-box {
+  padding: 6rem 0; }
+
+.header__logo-link {
+  text-decoration: none;
+  color: #fff; }
+
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  @media (max-width: 75em) {
+    .about {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; } }
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  height: 10vh; }
+  @media (max-width: 97em) {
+    .footer {
+      justify-content: center;
+      margin-top: 8rem; } }
+  @media (max-width: 75em) {
+    .footer {
+      margin-top: 10rem; } }

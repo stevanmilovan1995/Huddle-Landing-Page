@@ -1,0 +1,28 @@
+.wrapper {
+    max-width: 140rem;
+    margin: 0 auto;
+
+    @include respond(desktop){
+        max-width: 85%;
+    }
+
+    @include respond (tab-land) {
+        max-width: 80% ;
+    }
+}
+    
+
+.u-margin-top-big {
+    margin-top: 8rem;
+    @include respond(tab-port){
+        margin-top: 4rem; 
+    }
+}
+
+.u-margin-top-medium {
+    margin-top: 4rem;
+
+    @include respond(tab-port){
+        margin-top: 2rem; 
+    }
+}    

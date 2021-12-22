@@ -1,0 +1,37 @@
+.footer {
+
+    &__social-link{
+        text-decoration: none;
+        color: $color-white;
+
+        &:not(:last-child){
+            margin-right: 1rem;
+        }
+    }
+
+    &__social-media-icon {
+        padding: 1rem 1rem;
+        display: inline-block;
+        border: 2px solid $color-white;
+        border-radius: 60%;
+
+        &:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+            color: $color-secondary;
+            border: 2px solid $color-secondary;
+    
+            &::after {
+            transform: scaleX(1.4) scaleY(1.6);
+            opacity: 0;
+            }
+
+            &:active {
+                transform: translateY(-1px);
+                box-shadow: 0 .5rem 1rem rgba($color-black, 0.2);
+            }
+        }
+    }
+}
+        
+        

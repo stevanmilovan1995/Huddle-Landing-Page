@@ -1,0 +1,26 @@
+body {
+    font-family:"Open Sans" ,sans-serif ;
+    font-weight: 400;
+    color: $color-text-primary;
+}
+
+.heading-primary {
+    font-size: 4rem;
+    font-family: "Poppins" , sans-serif;
+    font-weight: 600;
+
+    @include respond(tab-land){
+        font-size: 5rem; 
+    }
+}
+
+.paragraph {
+    font-size: 1.8rem;
+    line-height: 1.6;
+    margin-bottom: 5rem;
+
+    @include respond(tab-land){
+        font-size: 2rem; 
+    }
+}
+    

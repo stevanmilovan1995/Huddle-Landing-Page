@@ -1,0 +1,30 @@
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include respond(tab-land){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+.footer {
+    display: flex;
+    justify-content: flex-end;
+    height: 10vh;
+
+    @include respond(desktop){
+       justify-content: center;
+       margin-top: 8rem;
+    }
+    @include respond(tab-land){
+        margin-top: 10rem;
+    }
+}
+       
+    
+    
+    
